@@ -60,7 +60,7 @@ RUN chmod +x /slic3r/get_latest_prusaslicer_release.sh \
 COPY --from=easy-novnc-build /bin/easy-novnc /usr/local/bin/
 COPY menu.xml /etc/xdg/openbox/
 COPY supervisord.conf /etc/
-EXPOSE 8080
+EXPOSE 8585
 
 VOLUME /configs/
 VOLUME /prints/
